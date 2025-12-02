@@ -230,35 +230,64 @@
           class="contact-form"
           id="contactFormEs"
         >
+          <label
+            for="gotcha"
+            class="sr-only"
+            >Bot Detectado</label
+          >
           <input
             type="text"
+            id="gotcha"
             name="_gotcha"
             style="display: none !important"
             tabindex="-1"
             autocomplete="off"
           />
-
+          <label
+            for="nombre"
+            class="sr-only"
+            >Nombre</label
+          >
           <input
             type="text"
+            id="nombre"
             name="nombre"
             placeholder="NOMBRE"
             class="input-form contact-form__input"
             required
           />
+          <label
+            for="compania"
+            class="sr-only"
+            >Compañía</label
+          >
           <input
             type="text"
+            id="compania"
             name="compania"
             placeholder="COMPAÑÍA"
             class="input-form contact-form__input"
           />
+          <label
+            for="correo"
+            class="sr-only"
+            >Email</label
+          >
           <input
             type="email"
+            id="correo"
             name="correo"
             placeholder="EMAIL"
             class="input-form contact-form__input"
             required
           />
+          <label
+            for="mensaje"
+            class="sr-only"
+            >Mensaje</label
+          >
           <textarea
+            id="mensaje"
             name="mensaje"
             placeholder="MENSAJE"
             class="input-form contact-form__textarea"

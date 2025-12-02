@@ -230,6 +230,11 @@
           class="contact-form"
           id="contactFormEn"
         >
+          <label
+            for="gotcha"
+            class="sr-only"
+            >Bot Detectado</label
+          >
           <input
             type="text"
             name="_gotcha"
@@ -237,31 +242,54 @@
             tabindex="-1"
             autocomplete="off"
           />
-
+          <label
+            for="nombre"
+            class="sr-only"
+            >Name</label
+          >
           <input
             type="text"
+            id="nombre"
             name="nombre"
             placeholder="NAME"
             class="input-form contact-form__input"
             aria-label="Name"
             required
           />
+          <label
+            for="compania"
+            class="sr-only"
+            >Company</label
+          >
           <input
             type="text"
+            id="compania"
             name="compania"
             placeholder="COMPANY"
             class="input-form contact-form__input"
             aria-label="Company"
           />
+          <label
+            for="correo"
+            class="sr-only"
+            >Email</label
+          >
           <input
             type="email"
+            id="correo"
             name="correo"
             placeholder="EMAIL"
             class="input-form contact-form__input"
             aria-label="Email"
             required
           />
+          <label
+            for="mensaje"
+            class="sr-only"
+            >Message</label
+          >
           <textarea
+            id="mensaje"
             name="mensaje"
             placeholder="MESSAGE"
             class="input-form contact-form__textarea"

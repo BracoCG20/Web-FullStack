@@ -443,50 +443,79 @@
         <form
           method="post"
           class="contact-form"
-          id="contactFormES"
+          id="contactFormEs"
         >
+          <label
+            for="gotcha"
+            class="sr-only"
+            >Bot Detectado</label
+          >
           <input
             type="text"
+            id="gotcha"
             name="_gotcha"
             style="display: none !important"
             tabindex="-1"
             autocomplete="off"
           />
 
+          <label
+            for="nombre"
+            class="sr-only"
+            >Nombre</label
+          >
           <input
             type="text"
+            id="nombre"
             name="nombre"
             placeholder="NOMBRE"
-            class="contact-form__input"
-            aria-label="Nombre"
+            class="input-form contact-form__input"
             required
           />
+
+          <label
+            for="compania"
+            class="sr-only"
+            >Compañía</label
+          >
           <input
             type="text"
+            id="compania"
             name="compania"
             placeholder="COMPAÑÍA"
-            class="contact-form__input"
-            aria-label="Compañía"
+            class="input-form contact-form__input"
           />
+
+          <label
+            for="correo"
+            class="sr-only"
+            >Email</label
+          >
           <input
             type="email"
+            id="correo"
             name="correo"
             placeholder="EMAIL"
-            class="contact-form__input"
-            aria-label="Email"
+            class="input-form contact-form__input"
             required
           />
+
+          <label
+            for="mensaje"
+            class="sr-only"
+            >Mensaje</label
+          >
           <textarea
+            id="mensaje"
             name="mensaje"
             placeholder="MENSAJE"
-            class="contact-form__textarea"
-            aria-label="Mensaje"
+            class="input-form contact-form__textarea"
             required
           ></textarea>
 
           <p
             id="form-status"
-            style="display: none; font-size: 1rem; margin-top: 10px"
+            style="display: none; font-size: 0.8rem; margin-top: 10px"
           ></p>
 
           <div class="contact-form__btn-wrapper">
