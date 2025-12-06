@@ -1,6 +1,6 @@
-# Grupo SP - Sitio Web Corporativo
+# FullStack - Sitio Web Corporativo
 
-Este repositorio contiene el código fuente del sitio web corporativo de **Grupo SP**, un holding latinoamericano enfocado en creatividad, estrategia y expansión.
+Este repositorio contiene el código fuente del sitio web corporativo, un holding latinoamericano enfocado en creatividad, estrategia y expansión.
 
 La aplicación está construida sobre **Node.js** y **Express**, sirviendo contenido estático optimizado y gestionando el envío de correos electrónicos de manera segura y eficiente.
 
