@@ -1,6 +1,5 @@
 name: CI/CD - Pruebas Automatizadas
 
-# Se ejecuta cada vez que haces push a la rama main o master
 on:
   push:
     branches: [main, master]
@@ -12,37 +11,31 @@ jobs:
     name: Correr Pruebas (Jest & Playwright)
     runs-on: ubuntu-latest
 
+    # --- CAMBIO AQUÍ: Definimos las variables para TODO el trabajo ---
+    env:
+      EMAIL_USER: "test@dummy.com"
+      EMAIL_PASS: "dummy_password"
+      EMAIL_TO: "test@dummy.com"
+      PORT: 4001
+
     steps:
-      # 1. Descargar tu código
       - name: Checkout del código
         uses: actions/checkout@v4
 
-      # 2. Instalar Node.js
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: "npm"
 
-      # 3. Instalar dependencias del proyecto
       - name: Instalar dependencias
         run: npm ci
 
-      # 4. Instalar navegadores de Playwright
       - name: Instalar navegadores Playwright
         run: npx playwright install --with-deps
 
-      # 5. Ejecutar Pruebas de Backend (Jest)
-      # Creamos variables de entorno dummy para que no falle server.js
       - name: Ejecutar Jest (Backend)
         run: npm test
-        env:
-          EMAIL_USER: "test@dummy.com"
-          EMAIL_PASS: "dummy"
-          EMAIL_TO: "test@dummy.com"
 
-      # 6. Ejecutar Pruebas de Frontend (Playwright)
       - name: Ejecutar Playwright (Frontend)
         run: npx playwright test
-        env:
-          PORT: 4001 # Aseguramos que Playwright use el puerto correcto
