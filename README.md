@@ -43,7 +43,7 @@ La aplicación está construida sobre **Node.js** y **Express**, sirviendo conte
     ```bash
     git clone <URL_DEL_REPOSITORIO>
     cd sp-pages
-    ```
+    `````
 
 2.  **Instalar dependencias:**
 
