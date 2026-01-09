@@ -36,7 +36,7 @@ La aplicación está construida sobre **Node.js** y **Express**, dando contenido
 - **Node.js** (Versión 16 o superior recomendada).
 - **NPM** (Gestor de paquetes).
 
-## 🔧 Instalación y Configuración Local
+## 🔧 Instalación y Configuración Local.
 
 1.  **Clonar el repositorio:**
 
